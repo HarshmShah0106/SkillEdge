@@ -1,0 +1,556 @@
+body{
+    font-family: sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 2px;
+    padding-right: 2px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #9935f7;
+}
+.logo{
+    width: 60px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.menu{
+    width: 100px;
+    cursor: pointer;
+    display: none;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    padding-bottom: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+nav ul li a:hover{
+    color: rgb(0, 0, 0);
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 50px 0;
+}
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+.col-1 h1{
+    font-size: 70px;
+    font-family: verdana;
+}
+.col-1 h3{
+    font-size: 25px;
+    font-family: verdana;
+    font-weight: 50;
+}
+.col-1 p{
+    font-size: 20px;
+}
+.col-1::after{
+    content: '';
+    width: 10px;
+    height: 80%;
+    background: linear-gradient(#ff469f,#ff6062);
+    position: absolute;
+    left: -40px;
+    top: 67px;
+}
+.col-2{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-basis: 40%;
+}
+.col-2 .main-img{
+    width: 600px;
+}
+.row-2 .conversation{
+    display: flex;
+    width: 40%;
+    margin-left: 450px;
+}
+.web-dev{
+    background-color: #27283D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 0 0;
+}
+.col-3{
+    position: relative;
+    align-items: center;
+    flex-basis: 10%;
+}
+.col-3 .web-image{
+    width: 450px;
+    margin-left: 20px;
+    margin-bottom: 30px; 
+}
+.col-3 h2{
+    font-size: 40px;
+    color: white;
+    margin-left: 20px;
+    text-align: center;
+}
+.col-4{
+    flex-basis: 40%;
+    position: relative;
+    margin-bottom: 30px;
+    }
+    .col-4 h2{
+        font-size: 30px;
+    }
+.col-4 .box-1{
+    width: 200px;
+    height: 320px;
+    background-color: #ff6062;
+    border-radius: 8px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+.col-4 .box-2{
+    width: 200px;
+    height: 320px;
+    background-color: #f16730;
+    border-radius: 8px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+.col-4 .box-3{
+    width: 200px;
+    height: 320px;
+    background-color: #493df7;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+.col-4 .box-4{
+    width: 200px;
+    height: 320px;
+    background-color: #1992f5;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+}
+.button{
+    background-color: black;
+    border: white;
+}
+.button:hover{
+    box-shadow: 0 0 30px black;
+}
+.col-4 .box-1 .button{
+    background-color: black;
+    border-style: none;
+    border-radius: 5px;
+    height: 40px;
+    width: auto;
+    margin-bottom: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.col-4 .box-2 .button{
+    background-color: black;
+    border-style: none;
+    border-radius: 5px;
+    height: 40px;
+    width: auto;
+    margin-bottom: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.col-4 .box-3 .button{
+    border-radius: 5px;
+    height: 40px;
+    width: auto;
+    margin-bottom: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.col-4 .box-4 .button{
+    border-radius: 5px;
+    height: 40px;
+    width: auto;
+    margin-bottom: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.col-4 .button{
+    color: white;
+}
+.android-dev{
+    background-color: #4f5668cb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 50px 0;
+}
+.col-6{
+    position: relative;
+    align-items: center;
+    flex-basis: 10%;
+}
+.col-6 .android-image{
+    width: 450px;
+    margin-right: 20px;
+    margin-bottom: 30px; 
+}
+.col-6 h2{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-right: 40px;
+}
+.col-5{
+    flex-basis: 40%;
+    position: relative;
+    margin-bottom: 30px;
+}
+.col-5 .box-5{
+    width: 200px;
+    height: 320px;
+    background-color: #ff6062;
+    border-radius: 8px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 80px;
+    text-align: center;
+}
+.col-5 .box-6{
+    width: 200px;
+    height: 320px;
+    background-color: #f16730;
+    border-radius: 8px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+.col-5 .box-7{
+    width: 200px;
+    height: 320px;
+    background-color: #493df7;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+.col-5 .box-8{
+    width: 200px;
+    height: 320px;
+    background-color: #1992f5;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+.col-5 .box-5 .button{
+    border-radius: 5px;
+    height: 40px;
+    width: auto;
+    margin-bottom: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.col-5 .box-6 .button{
+    border-radius: 5px;
+    height: 40px;
+    width: auto;
+    margin-bottom: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.col-5 .box-7 .button{
+    border-radius: 5px;
+    height: 40px;
+    width: auto;
+    margin-bottom: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.col-5 .box-8 .button{
+    border-radius: 5px;
+    height: 40px;
+    width: auto;
+    margin-bottom: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.col-5 .button{
+    color: white;
+}
+.socialmedia{
+    display: inline;
+    margin-top: 30px;
+    margin-left: 780px;
+}
+.socialmedia img{
+    width: 40px;
+    height: 40px;
+    margin-right: 60px;
+    margin-bottom: 30px;
+}
+
+
+
+@media screen and (width:450px){
+    .menu{
+        display: flex;
+    }
+    nav ul{
+        width: 100%;
+        background: linear-gradient(#ff469f,#ff6062);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: white;
+    }
+    #menulist{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .row{
+        flex-direction: column-reverse;
+    }
+    .col-1 .col-2{
+        flex-basis: 100%;
+    }
+    .col-1 h1{
+        font-size: 50px;
+    }
+    .col-1 h3{
+        font-size: 22px;
+    }
+    .col-1::after{
+        top: 45px;
+        height: 88%;
+    }
+    .col-2 .main-img{
+        width: 374px;
+    }
+    .row-2 .conversation{
+        width: 300px;
+        margin-left: 200px;
+    }
+    .col-3 h2{
+        font-size: 40px;
+        color: white;
+        margin-right: 25px;
+        text-align: center;
+    }
+    .col-3 .web-image{
+        width: 300px;
+        margin-bottom: 30px; 
+        margin-left: 0;
+    }
+    .web-dev{
+        flex-direction: column;
+        text-align: center;
+    }
+    .col-3 .col-4{
+        flex-basis: 100%;
+    }
+    .web-dev .col-4 .box-1{
+        margin-right: 0;
+    }
+    .web-dev .col-4 .box-2{
+        margin-right: 0;
+    }
+    .web-dev .col-4 .box-3{
+        margin-right: 0;
+    }
+    .web-dev .col-4 .box-4{
+        margin-right: 0;
+    }
+    .col-6 h2{
+        font-size: 24px;
+        color: white;
+        margin-right: 0;
+        text-align: center;
+    }
+    .col-6 .android-image{
+        width: 280px;
+        margin-bottom: 30px; 
+        margin-right: 0;
+    }
+    .android-dev{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .col-5 .col-6{
+        flex-basis: 100%;
+    }
+    .android-dev .col-5 .box-5{
+        margin-left: 0;
+    }
+    .android-dev .col-5 .box-6{
+        margin-left: 0;
+    }
+    .android-dev .col-5 .box-7{
+        margin-left: 0;
+    }
+    .android-dev .col-5 .box-8{
+        margin-left: 0;
+    }
+    .socialmedia{
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width:1000px){
+    .menu{
+        display: flex;
+    }
+    nav ul{
+        width: 100%;
+        background: linear-gradient(#ff469f,#ff6062);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: white;
+    }
+    #menulist{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .col-1 .col-2{
+        flex-basis: 100%;
+    }
+    .col-1 h1{
+        font-size: 50px;
+    }
+    .col-1 h3{
+        font-size: 25px;
+    }
+    .col-1::after{
+        top: 45px;
+        height: 86%;
+    }
+    .col-2 .main-img{
+        width: 374px;
+    }
+    .row-2 .conversation{
+        width: 450px;
+        margin-left: 120px;
+    }
+    .col-3 h2{
+        font-size: 40px;
+        color: white;
+        margin-right: 25px;
+        text-align: center;
+    }
+    .col-3 .web-image{
+        width: 500px;
+        margin-bottom: 30px; 
+        margin-left: 0;
+    }
+    .web-dev{
+        flex-direction: column;
+        text-align: center;
+    }
+    .col-4{
+        width: 500px;
+    }
+    .col-3 .col-4{
+        flex-basis: 100%;
+    }
+    .web-dev .col-4 .box-1{
+        margin-left: 0;
+    }
+    .web-dev .col-4 .box-2{
+        margin-left: 0;
+    }
+    .web-dev .col-4 .box-3{
+        margin-left: 0;
+    }
+    .web-dev .col-4 .box-4{
+        margin-left : 0;
+        margin-right: 20px;
+    }
+    .col-6 h2{
+        font-size: 24px;
+        color: white;
+        margin-right: 0;
+        text-align: center;
+    }
+    .col-6 .android-image{
+        width: 480px;
+        margin-bottom: 30px; 
+        margin-right: 0;
+    }
+    .android-dev{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .col-5 .col-6{
+        flex-basis: 100%;
+    }
+    .col-5{
+        width: 500px;
+    }
+    .android-dev .col-5 .box-5{
+        margin-right: 0;
+    }
+    .android-dev .col-5 .box-6{
+        margin-right: 0;
+    }
+    .android-dev .col-5 .box-7{
+        margin-right: 0;
+    }
+    .android-dev .col-5 .box-8{
+        margin-right: 0;
+    }
+    .socialmedia{
+        margin-left: 210px;
+    }
+
+}
